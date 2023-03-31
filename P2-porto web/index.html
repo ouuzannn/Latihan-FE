@@ -7,11 +7,12 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
    <!-- my css -->
     <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
    <title>My Portofolio</title>
 </head>
-<body>
+<body id="home">
     <!-- nav bar -->
-    <nav class="navbar navbar-expand-lg bg-primary navbar-dark shadow">
+    <nav class="navbar navbar-expand-lg bg-primary navbar-dark shadow fixed-top">
       <div class="container">
         <a class="navbar-brand" href="#">Akmal Fauzan Suranta</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,16 +21,16 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" aria-current="page" href="#home">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Projects</a>
+              <a class="nav-link" href="#projects">Projects</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link disabled">Contact</a>
+              <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
         </div>
@@ -38,12 +39,133 @@
     <!--  akhir nav bar-->
 
     <!-- Jumbotron -->
-    <div class="jumbotron">
-      <img src="component/" alt="">  
+    <div class="jumbotron text-center">
+      <img src="component/download.jpeg" alt="Akmal Fauzan" width="200" class="rounded-circle img-thumbnail">  
       <h1 class="display-4">Hello, world!</h1>
-        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-    </div>
+      <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#f3f4f5" fill-opacity="1" d="M0,128L24,112C48,96,96,64,144,85.3C192,107,240,181,288,181.3C336,181,384,107,432,112C480,117,528,203,576,240C624,277,672,267,720,224C768,181,816,107,864,64C912,21,960,11,1008,21.3C1056,32,1104,64,1152,90.7C1200,117,1248,139,1296,128C1344,117,1392,75,1416,53.3L1440,32L1440,320L1416,320C1392,320,1344,320,1296,320C1248,320,1200,320,1152,320C1104,320,1056,320,1008,320C960,320,912,320,864,320C816,320,768,320,720,320C672,320,624,320,576,320C528,320,480,320,432,320C384,320,336,320,288,320C240,320,192,320,144,320C96,320,48,320,24,320L0,320Z"></path>
+      </svg>
+        
+      </div>
     <!-- Akhir Jumbotron -->
+
+    <!-- About -->
+      <div id="about" style="padding-top: 5em;">
+        <div class="container">
+          <div class="row text-center mb-3">
+            <div class="col">
+              <h2>About me</h2>
+            </div>
+          </div>
+          <div class="row justify-content-center text-center">
+            <!-- Jumlah kolom maksimal 12 -->
+            <div class="col-md-4">
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio expedita cumque blanditiis magnam odit beatae explicabo quia ullam eligendi quis.
+              </p>
+            </div>
+            <div class="col-md-4">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab molestiae suscipit reprehenderit perspiciatis sit minima quis consequuntur eaque voluptatibus sunt magnam accusamus beatae, impedit ipsa.</p>
+            </div>
+          </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#e2edff" fill-opacity="1" d="M0,128L24,149.3C48,171,96,213,144,192C192,171,240,85,288,80C336,75,384,149,432,165.3C480,181,528,139,576,138.7C624,139,672,181,720,192C768,203,816,181,864,181.3C912,181,960,203,1008,181.3C1056,160,1104,96,1152,85.3C1200,75,1248,117,1296,149.3C1344,181,1392,203,1416,213.3L1440,224L1440,320L1416,320C1392,320,1344,320,1296,320C1248,320,1200,320,1152,320C1104,320,1056,320,1008,320C960,320,912,320,864,320C816,320,768,320,720,320C672,320,624,320,576,320C528,320,480,320,432,320C384,320,336,320,288,320C240,320,192,320,144,320C96,320,48,320,24,320L0,320Z"></path></svg>
+      </div>
+    <!-- Akhir About -->
+
+    <!-- Projects -->
+      <div id="projects" style="padding-top: 5em;">
+        <div class="container">
+          <div class="row text-center mb-3" style="padding-top: 5em;">
+            <div class="col">
+              <h2>My Projects</h2>
+            </div>
+          </div>
+          <div class="row justify-content-evenly">
+            <div class="col-md-4 mb-3">
+              <div class="card">
+                <img src="component/projects/vipul-jha-a4X1cdC1QAc-unsplash.jpg" class="card-img-top" alt="Project 1">
+                <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <div class="card">
+                <img src="component/projects/jay-zhang-1hODsNcJ7es-unsplash.jpg" class="card-img-top" alt="Project 2">
+                <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <div class="card">
+                <img src="component/projects/jay-zhang-ycZjz2Uw6VY-unsplash.jpg" class="card-img-top" alt="Project 3">
+                <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <div class="card">
+                <img src="component/projects/jay-zhang-ycZjz2Uw6VY-unsplash.jpg" class="card-img-top" alt="Project 4">
+                <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 mb-3">
+              <div class="card">
+                <img src="component/projects/jay-zhang-ycZjz2Uw6VY-unsplash.jpg" class="card-img-top" alt="Project 5">
+                <div class="card-body">
+                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f3f4f5" fill-opacity="1" d="M0,32L24,48C48,64,96,96,144,133.3C192,171,240,213,288,213.3C336,213,384,171,432,170.7C480,171,528,213,576,197.3C624,181,672,107,720,69.3C768,32,816,32,864,37.3C912,43,960,53,1008,90.7C1056,128,1104,192,1152,208C1200,224,1248,192,1296,181.3C1344,171,1392,181,1416,186.7L1440,192L1440,320L1416,320C1392,320,1344,320,1296,320C1248,320,1200,320,1152,320C1104,320,1056,320,1008,320C960,320,912,320,864,320C816,320,768,320,720,320C672,320,624,320,576,320C528,320,480,320,432,320C384,320,336,320,288,320C240,320,192,320,144,320C96,320,48,320,24,320L0,320Z"></path></svg>
+      </div>
+    <!-- Akhir Projects -->
+
+    <!-- Contact -->
+    <div id="contact" style="padding-top: 5em;">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col">
+            <h2>Contact Me</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <form>
+              <div class="mb-3">
+                <label for="nama" class="form-label">Nama Lengkap</label>
+                <input type="email" class="form-control" id="name" >
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" >
+              </div>
+              <div class="mb-3">
+                <label for="pesan" class="form-label">Example textarea</label>
+                <textarea class="form-control" id="pesan" rows="3"></textarea>
+              </div>              
+              <button type="submit" class="btn btn-primary">Kirim</button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0d6efd" fill-opacity="1" d="M0,64L24,64C48,64,96,64,144,64C192,64,240,64,288,85.3C336,107,384,149,432,160C480,171,528,149,576,117.3C624,85,672,43,720,26.7C768,11,816,21,864,74.7C912,128,960,224,1008,224C1056,224,1104,128,1152,80C1200,32,1248,32,1296,37.3C1344,43,1392,53,1416,58.7L1440,64L1440,320L1416,320C1392,320,1344,320,1296,320C1248,320,1200,320,1152,320C1104,320,1056,320,1008,320C960,320,912,320,864,320C816,320,768,320,720,320C672,320,624,320,576,320C528,320,480,320,432,320C384,320,336,320,288,320C240,320,192,320,144,320C96,320,48,320,24,320L0,320Z"></path></svg>
+    </div>
+    <!-- Akhir Contact -->
+
+    <!-- footer -->
+    <div id="contact" class="bg-primary text-white text-center pb-5" style="padding-top: 5em;">
+      <p>Created With <i class="bi bi-balloon-heart-fill"></i> By <a href="#" class="text-white fw-bold">Akmal Fauzan Suranta</a></p>
+    </div>
+    <!-- akhir footer -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
